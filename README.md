@@ -6,7 +6,6 @@
 
 *A quiet place for daily notes — a calendar you can actually write on.*
 
-Author — **Lakshmi Valmiki**
 
 ## Table of Contents
 
