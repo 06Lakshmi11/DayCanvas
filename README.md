@@ -6,6 +6,9 @@
 
 *A quiet place for daily notes — a calendar you can actually write on.*
 
+## 🌐 Live Demo
+
+👉 https://day-canvas-eight.vercel.app
 
 ## Table of Contents
 
