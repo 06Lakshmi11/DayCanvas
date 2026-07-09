@@ -1,0 +1,68 @@
+:root {
+  /* Color tokens */
+  --paper: #f7f6f1;
+  --paper-raised: #ffffff;
+  --ink: #21261f;
+  --ink-soft: #4b524a;
+  --sage: #6e8b6e;
+  --sage-soft: #e2ead9;
+  --coral: #e2704e;
+  --coral-soft: #fbe3d8;
+  --rule: #dad6c8;
+  --shadow: rgba(33, 38, 31, 0.08);
+
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+}
+
+button:not(.day-cell) {
+  transition: transform 0.1s ease, filter 0.1s ease, background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+button:not(.day-cell):active {
+  transform: scale(0.96);
+}
+
+button:disabled:active {
+  transform: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--sage);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
